@@ -4,44 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit Conversion</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Unit Converter</title>
 </head>
 <body>
-
-     <main>
-        <div class="top">
+    <main>
+        <section class="top">
             <h1>Metric/Imperial unit conversion</h1>
+                <div class="input-field">
+                    <input type="text" placeholder='0' id="input">
+                    <button id="convert-btn">Convert!</button>
+                </div>
+        </section>
 
-             <p class="number-input">0</p>
-        </div>
+        <section class="bottom" id="bottom">
+            <h2>Length (Meter/Feet)</h2>
+            <p id="meter-to-feet">
+                0 meters = 0.000 feet | 0 feet = 0.000 meters
+            </p>
+            <h2>Volume (Liters/Gallons)</h2>
 
-        <div class="bottom" id="conversions">
-           <section class="item item-1">
-                <h2>Length (Meter/Feet)</h2>
-                <p id="length-el">0 metres = 0 feet | 0 feet = 0 metres</p>
-           </section>
-
-            <section class="item">
-                <h2>Volume (Liters/Gallons)</h2>
-                <p id="volume-el">0 litres = 0 gallons | 0 gallons = 0 litres</p>
-            </section>
-
-            <section class="item">
-                <h2>Mass (Kilograms/Pounds)</h2>
-                <p id="mass-el">0 kilos = 0 pounds | 0 pounds = 0 kilos</p>
-            </section>
-
-            <button onclick="convert()" >Convert!</button>
-            
-
-        
-        </div>
-    </main> 
-    
+            <p id="liters-to-gallons">
+                 0 liters = 0.000 gallons | 0 gallons = 0.000 liters
+            </p>
+            <h2>Mass (Kilograms/Pounds)</h2>
+            <p id="kilo-to-pounds">
+                0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos
+            </p>
+        </section>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
